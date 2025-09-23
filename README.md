@@ -30,6 +30,15 @@ Outputs are written to `dist/fonts-installable` using `.ttf` for TrueType or `.o
 - Select the `.ttf`/`.otf` files
 - Right‑click → Install (or Install for all users)
 
+## Create TTC collection (single file with all styles)
+Bundle TTF files into a single TrueType Collection:
+```bash
+python scripts/bundle_to_ttc.py --src dist/CursorGothic --out dist/CursorGothic/CursorGothic.ttc --overwrite
+```
+
+Example output: `CursorGothic.ttc` contains all TTF styles in one installable file.
+
 ## Notes
 - Ensure your license permits format conversion and desktop installation.
 - Creating a true variable font requires source masters or an existing variable font; this tool only converts containers.
+- TTC files bundle multiple font faces into a single file for easier installation.
