@@ -178,8 +178,8 @@ def normalize_one_font(src_path: Path, out_dir: Path, family_name: str, overwrit
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Normalize font names to a target family")
     parser.add_argument("--src", default="dist/fonts-installable", help="Source directory of .ttf/.otf")
-    parser.add_argument("--out", default="dist/CursorGothic", help="Output directory for renamed fonts")
-    parser.add_argument("--family", default="Cursor Gothic", help="Target family name (menu & typographic)")
+    parser.add_argument("--out", default="dist/fonts-renamed", help="Output directory for renamed fonts")
+    parser.add_argument("--family", default="Custom Font", help="Target family name (menu & typographic)")
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing outputs")
     parser.add_argument("--dry-run", action="store_true", help="Preview changes without writing files")
 

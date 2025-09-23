@@ -4,7 +4,7 @@ A Python toolkit for converting web fonts (WOFF2) to installable desktop fonts w
 
 ## Features
 - 🔄 Convert WOFF2 → TTF/OTF
-- 🏷️ Normalize font family names (e.g., "Cursor Gothic")
+- 🏷️ Normalize font family names (e.g., "Custom Font")
 - 📦 Bundle multiple fonts into single TTC files
 - ⚡ One-click installation scripts
 - 🎯 Automatic weight/style detection
@@ -24,9 +24,9 @@ python -m pip install -r requirements.txt
 ## Quick Start
 1. Place your `.woff2` files in the `fonts/` directory
 2. Run the conversion: `python scripts/convert_woff2_to_ttf.py --src fonts --out dist/fonts-installable`
-3. Normalize names: `python scripts/normalize_font_names.py --src dist/fonts-installable --out dist/CursorGothic --family "Cursor Gothic"`
-4. Create TTC: `python scripts/bundle_to_ttc.py --src dist/CursorGothic --out dist/CursorGothic/CursorGothic.ttc`
-5. Install: Double-click `install-cursor-gothic.bat` or install `CursorGothic.ttc` manually
+3. Normalize names: `python scripts/normalize_font_names.py --src dist/fonts-installable --out dist/fonts-renamed --family "Custom Font"`
+4. Create TTC: `python scripts/bundle_to_ttc.py --src dist/fonts-renamed --out dist/fonts-renamed/CustomFont.ttc`
+5. Install: Double-click `install-fonts.bat` or install `CustomFont.ttc` manually
 
 ## Convert fonts
 Run from the project root:
@@ -49,10 +49,10 @@ Outputs are written to `dist/fonts-installable` using `.ttf` for TrueType or `.o
 ## Create TTC collection (single file with all styles)
 Bundle TTF files into a single TrueType Collection:
 ```bash
-python scripts/bundle_to_ttc.py --src dist/CursorGothic --out dist/CursorGothic/CursorGothic.ttc --overwrite
+python scripts/bundle_to_ttc.py --src dist/fonts-renamed --out dist/fonts-renamed/CustomFont.ttc --overwrite
 ```
 
-Example output: `CursorGothic.ttc` contains all TTF styles in one installable file.
+Example output: `CustomFont.ttc` contains all TTF styles in one installable file.
 
 ## Notes
 - Ensure your license permits format conversion and desktop installation.

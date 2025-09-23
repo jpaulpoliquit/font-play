@@ -36,8 +36,8 @@ def load_fonts(paths: List[Path]) -> list[TTFont]:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Bundle fonts into a TTC")
-    parser.add_argument("--src", default="dist/CursorGothic", help="Directory containing .ttf/.otf to bundle")
-    parser.add_argument("--out", default="dist/CursorGothic/CursorGothic.ttc", help="Output .ttc path")
+    parser.add_argument("--src", default="dist/fonts-renamed", help="Directory containing .ttf/.otf to bundle")
+    parser.add_argument("--out", default="dist/fonts-renamed/CustomFont.ttc", help="Output .ttc path")
     parser.add_argument("--include-otf", action="store_true", help="Attempt to include .otf (CFF) faces as well")
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing .ttc")
 

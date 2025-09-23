@@ -2,7 +2,7 @@
 setlocal
 
 set SCRIPT_DIR=%~dp0
-set PS1=%SCRIPT_DIR%dist\CursorGothic\install.ps1
+set PS1=%SCRIPT_DIR%dist\fonts-renamed\install.ps1
 
 if not exist "%PS1%" (
   echo Cannot find installer script: %PS1%
