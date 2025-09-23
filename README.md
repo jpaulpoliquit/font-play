@@ -1,4 +1,13 @@
-# Convert WOFF2 to installable fonts
+# Font Conversion Toolkit
+
+A Python toolkit for converting web fonts (WOFF2) to installable desktop fonts with family normalization and TTC bundling.
+
+## Features
+- 🔄 Convert WOFF2 → TTF/OTF
+- 🏷️ Normalize font family names (e.g., "Cursor Gothic")
+- 📦 Bundle multiple fonts into single TTC files
+- ⚡ One-click installation scripts
+- 🎯 Automatic weight/style detection
 
 This utility converts static `.woff2` webfonts in `fonts/` into installable desktop fonts (`.ttf` or `.otf`). It does not create variable fonts.
 
@@ -11,6 +20,13 @@ Install packages:
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
+
+## Quick Start
+1. Place your `.woff2` files in the `fonts/` directory
+2. Run the conversion: `python scripts/convert_woff2_to_ttf.py --src fonts --out dist/fonts-installable`
+3. Normalize names: `python scripts/normalize_font_names.py --src dist/fonts-installable --out dist/CursorGothic --family "Cursor Gothic"`
+4. Create TTC: `python scripts/bundle_to_ttc.py --src dist/CursorGothic --out dist/CursorGothic/CursorGothic.ttc`
+5. Install: Double-click `install-cursor-gothic.bat` or install `CursorGothic.ttc` manually
 
 ## Convert fonts
 Run from the project root:
