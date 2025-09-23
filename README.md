@@ -54,7 +54,28 @@ python scripts/bundle_to_ttc.py --src dist/fonts-renamed --out dist/fonts-rename
 
 Example output: `CustomFont.ttc` contains all TTF styles in one installable file.
 
+## ⚠️ Important Legal Notice
+
+**This toolkit was created for personal experimentation and educational purposes.**
+
+### Commercial Use Warning
+- **DO NOT** use this tool with copyrighted or commercial fonts without explicit permission
+- **ALWAYS** verify that your font license permits:
+  - Format conversion (WOFF2 → TTF/OTF)
+  - Desktop installation
+  - Distribution/sharing (if applicable)
+- Many web fonts have licenses that restrict desktop installation
+- When in doubt, contact the font foundry or check the license terms
+
+### Recommended Use Cases
+- ✅ Personal experiments with your own fonts
+- ✅ Open source/libre fonts (OFL, etc.)
+- ✅ Fonts where you have explicit conversion rights
+- ❌ Commercial web fonts without permission
+- ❌ Fonts with restrictive licenses
+
+**You are responsible for ensuring compliance with all applicable font licenses.**
+
 ## Notes
-- Ensure your license permits format conversion and desktop installation.
 - Creating a true variable font requires source masters or an existing variable font; this tool only converts containers.
 - TTC files bundle multiple font faces into a single file for easier installation.
