@@ -285,7 +285,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true", help="List planned conversions without writing files")
     parser.add_argument("--use-hash-names", action="store_true", help="Use original hash-based filenames instead of metadata-based names")
     parser.add_argument("--organize-by-family", action="store_true", help="Organize output fonts into subdirectories by font family")
-    parser.add_argument("--force-family", type=str, help="Rename all fonts to use this family name (e.g., 'Cursor Gothic')")
+    parser.add_argument("--force-family", type=str, help="Rename all fonts to use this family name (e.g., 'Gothic')")
     parser.add_argument("--create-collection", action="store_true", help="Create a single TTC (TrueType Collection) file containing all fonts")
 
     args = parser.parse_args(argv)

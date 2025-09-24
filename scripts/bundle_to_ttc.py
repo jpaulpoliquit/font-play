@@ -8,7 +8,7 @@ attempt to include OTFs as well.
 
 Usage:
   python scripts/bundle_to_ttc.py \
-    --src dist/CursorGothic --out dist/CursorGothic/CursorGothic.ttc [--include-otf]
+    --src dist/Gothic --out dist/Gothic/Gothic.ttc [--include-otf]
 """
 
 from __future__ import annotations

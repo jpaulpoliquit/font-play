@@ -4,7 +4,7 @@ Normalize font name tables and filenames to a target family name.
 
 Example:
   python scripts/normalize_font_names.py \
-    --src dist/fonts-installable --out dist/CursorGothic --family "Cursor Gothic"
+    --src dist/fonts-installable --out dist/Gothic --family " Gothic"
 
 Notes:
   - Works on static TTF/OTF fonts.

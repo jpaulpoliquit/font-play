@@ -1,3 +1,14 @@
 fonts/
 dist/
 .venv/
+fonts-
+dist/
+cursor-fonts/
+fonts-mapped/
+fonts-renamed/
+fonts-installable/
+fonts-installable-gothic/
+fonts-installable-gothic-renamed/
+fonts-installable-gothic-renamed-gothic/
+fonts-installable-gothic-renamed-gothic-renamed/
+downloads/
